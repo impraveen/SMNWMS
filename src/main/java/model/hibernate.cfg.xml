@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/smndbwms</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="model.bean.Customer" />
+        <mapping class="model.bean.Contract" />
+        <mapping class="model.bean.SalesItem" />
+        <mapping class="model.bean.User" />
+        <mapping class="model.bean.Address" />
+        <mapping class="model.bean.Item" />
+        <mapping class="model.bean.Supplier" />
+        <mapping class="model.bean.InventoryCheck" />
+        <mapping class="model.bean.PurchasingItem" />
+        <mapping class="model.bean.Job" />
+        <mapping class="model.bean.Purchase" />
+        <mapping class="model.bean.Sales" />
+        <mapping class="model.bean.StockMove" />
+        <mapping class="model.bean.ContractType" />
+        <mapping class="model.bean.Unit" />
+        <mapping class="model.bean.Warehouse" />
+        <mapping class="model.bean.Country" />
+        <mapping class="model.bean.Location" />
+        <mapping class="model.bean.PersonType" />
+        <mapping class="model.bean.StockMoveType" />
+        <mapping class="model.bean.Person" />
+        <mapping class="model.bean.UserRole" />
+        <mapping class="model.bean.City" />
+    </session-factory>
+</hibernate-configuration>
